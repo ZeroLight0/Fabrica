@@ -7,14 +7,30 @@ export function Header({ order }) {
     <header className="sticky top-0 z-30 border-b border-white/40 bg-[rgba(244,239,231,0.82)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 lg:px-10">
         <div>
-          <div className="text-xs font-semibold uppercase tracking-[0.5em] text-stone-500">Fabrica</div>
+          <div className="text-xs font-semibold uppercase tracking-[0.5em] text-stone-500">
+            Fabrica
+          </div>
           <p className="mt-1 text-sm text-stone-600">Tailor helper</p>
         </div>
-        <nav className="hidden items-center gap-8 text-sm font-medium text-stone-600 md:flex">
-          <a href="#overview" className="transition hover:text-stone-950">Home</a>
-          <a href="#fabrica-console" className="transition hover:text-stone-950">Form</a>
-          <a href="#measurements" className="transition hover:text-stone-950">Body Size</a>
-          <a href="#summary" className="transition hover:text-stone-950">Print</a>
+        <nav
+          aria-label="Primary navigation"
+          className="hidden items-center gap-8 text-sm font-medium text-stone-600 md:flex"
+        >
+          <a href="#overview" className="transition hover:text-stone-950">
+            Home
+          </a>
+          <a
+            href="#fabrica-console"
+            className="transition hover:text-stone-950"
+          >
+            Form
+          </a>
+          <a href="#measurements" className="transition hover:text-stone-950">
+            Body Size
+          </a>
+          <a href="#summary" className="transition hover:text-stone-950">
+            Print
+          </a>
         </nav>
         <button
           type="button"
